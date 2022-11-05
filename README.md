@@ -15,7 +15,7 @@ specified in the task. Two themes are declared for light and dark modes with pri
 All major containers are wrapper in a column widget
 Container 1 has 2 child containers in a row
 Container 2 has just a text as a child widget
-Comtainer 3 has just a text as a child widget
+Container 3 has just a text as a child widget
 
 The social media links are wrapped in a row widget with 5px distance
 
@@ -27,9 +27,9 @@ To the right is a toggle button for light and dark modes
 Colors:
 
 Appbar - #1A237E
-Container 1 - fromARGB(40, 175, 184, 189)
-Container 2 - fromARGB(99, 158, 170, 177)
-Container 3 - fromARGB(103, 175, 184, 189)
+#### Container 1 - fromARGB(40, 175, 184, 189)
+#### Container 2 - fromARGB(99, 158, 170, 177)
+#### Container 3 - fromARGB(103, 175, 184, 189)
 
 The entire body is wrapped around a SingleChildScrollView widget to allow scrolling in landscape and portrait modes
 There is a 10px padding on all sides of the the body which houses 3 major containers arranged in a column.
