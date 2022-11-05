@@ -43,7 +43,8 @@ package:flutter/material.dart
 package:url_launcher/url_launcher.dart - not implemented
 
 ## Future Updates
--Add some animated widgets for interactions which is completely missing from the app
+
+- Add some animated widgets for interactions which is completely missing from the app
 - improve the landscape view
 - Add contents for the items in the navigation bar
 - Add a sign in page
