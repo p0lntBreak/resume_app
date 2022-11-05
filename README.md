@@ -1,16 +1,21 @@
 # resume_app
 
-A new Flutter project.
+Stage 2 Task
 
-## Getting Started
+## Code Base
+The code starts with importing the materials package from flutter which is a catalog of commonly
+used widgets in flutter material design.
 
-This project is a starting point for a Flutter application.
+There are two dart files, main.dart and nav_bar.dart.
+main.dart is where the homepage is created using a stateful widget.
+The stateful widget which allows widgets to change overtime is used due to the dark mode and language requirements
+specified in the task. Two themes are declared for light and dark modes
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+
+
+
+
+
+
