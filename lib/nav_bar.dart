@@ -1,3 +1,5 @@
+// ignore_for_file: avoid_returning_null_for_void
+
 import 'package:flutter/material.dart';
 
 class NavBar extends StatelessWidget {
@@ -52,40 +54,51 @@ class NavBar extends StatelessWidget {
         ListTile(
           leading: const Icon(Icons.book),
           title: const Text('Portfolio'),
-          onTap: () => print('fav'),
+          onTap: () => null,
         ),
         ListTile(
           leading: const Icon(Icons.favorite),
           title: const Text('Favorites'),
-          onTap: () => print('fav'),
+          onTap: () => null,
         ),
         ListTile(
           leading: const Icon(Icons.people),
           title: const Text('Friends'),
-          onTap: () => print('fav'),
+          onTap: () => null,
         ),
         ListTile(
           leading: const Icon(Icons.notifications),
           title: const Text('Notifications'),
-          onTap: () => print('fav'),
+          onTap: () => null,
+          trailing: ClipOval(
+            child: Container(
+              color: Colors.black,
+              width: 20,
+              height: 20,
+              child: const Center(
+                child: Text(
+                  '2',
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 12,
+                  ),
+                ),
+              ),
+            ),
+          ),
         ),
         ListTile(
           leading: const Icon(Icons.task),
-          title: Text('Task'),
-          onTap: () => print('fav'),
+          title: const Text('Task'),
+          onTap: () => null,
         ),
-        Divider(
+        const Divider(
           color: Colors.black,
         ),
         ListTile(
           leading: const Icon(Icons.settings),
           title: const Text('Settings'),
-          onTap: () => print('fav'),
-        ),
-        ListTile(
-          leading: const Icon(Icons.exit_to_app),
-          title: const Text('exit'),
-          onTap: () => print('fav'),
+          onTap: () => null,
         ),
       ],
     ));
