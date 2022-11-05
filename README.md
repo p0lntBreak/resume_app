@@ -19,5 +19,5 @@ specified in the task. Two themes are declared for light and dark modes
 
 
 
-### APK link
+### apk link
 https://drive.google.com/file/d/1-3pSbBLW74v-wPIx27LwR1Dwoem1tCAO/view?usp=share_link
