@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
-import 'package:resume_app/navbar.dart';
+import 'package:resume_app/nav_bar.dart';
 
 void main() {
   runApp(const MyApp());
@@ -73,7 +73,7 @@ class ResumeApp extends State<MyApp> {
                   height: 200,
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(30),
-                    color: Color.fromARGB(176, 33, 47, 243),
+                    color: Color.fromARGB(174, 63, 63, 66),
                   ),
                   child: Row(
                     children: [
