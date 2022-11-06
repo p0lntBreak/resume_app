@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:url_launcher/link.dart';
-import 'package:url_launcher/url_launcher.dart';
 import 'package:resume_app/nav_bar.dart';
 
 void main() {
@@ -34,14 +33,6 @@ ThemeData _darkTheme = ThemeData(
     ));
 
 class ResumeApp extends State<MyApp> {
-  openUrltwitter() async {
-    if (await canLaunchUrl(Uri.https('twitter.com', 'olahtops'))) {
-      await launchUrl(Uri.https('twitter.com', 'olahtops'));
-    } else {
-      throw 'Could not launch Url';
-    }
-  }
-
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
