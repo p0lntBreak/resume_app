@@ -76,7 +76,7 @@ class ResumeApp extends State<MyApp> {
                     height: 200,
                     decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(30),
-                        color: Color.fromARGB(40, 175, 184, 189)),
+                        color: const Color.fromARGB(40, 175, 184, 189)),
                     child: Row(
                       children: [
                         const SizedBox(
@@ -142,7 +142,7 @@ class ResumeApp extends State<MyApp> {
                     height: 100,
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(30),
-                      color: Color.fromARGB(99, 158, 170, 177),
+                      color: const Color.fromARGB(99, 158, 170, 177),
                     ),
                     child: const Padding(
                       padding: EdgeInsets.all(20.0),
@@ -161,7 +161,7 @@ class ResumeApp extends State<MyApp> {
                     height: 200,
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(30),
-                      color: Color.fromARGB(103, 175, 184, 189),
+                      color: const Color.fromARGB(103, 175, 184, 189),
                     ),
                     child: const Padding(
                       padding: EdgeInsets.all(20.0),
