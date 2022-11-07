@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:url_launcher/link.dart';
-import 'package:url_launcher/url_launcher.dart';
 import 'package:resume_app/nav_bar.dart';
 
 void main() {
@@ -34,6 +33,7 @@ ThemeData _darkTheme = ThemeData(
     ));
 
 class ResumeApp extends State<MyApp> {
+<<<<<<< HEAD
   final Uri github_url = Uri.parse('https://github.com/p0lntBreak');
 
   openUrltwitter() async {
@@ -44,6 +44,8 @@ class ResumeApp extends State<MyApp> {
     }
   }
 
+=======
+>>>>>>> 9e72376128e54ad59590e2b2a57cf89f299608e0
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
