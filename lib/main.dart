@@ -34,9 +34,11 @@ ThemeData _darkTheme = ThemeData(
     ));
 
 class ResumeApp extends State<MyApp> {
+  final Uri github_url = Uri.parse('https://github.com/p0lntBreak');
+
   openUrltwitter() async {
-    if (await canLaunchUrl(Uri.https('twitter.com', 'olahtops'))) {
-      await launchUrl(Uri.https('twitter.com', 'olahtops'));
+    if (await launchUrl(github_url)) {
+      await launchUrl(github_url, mode: LaunchMode.inAppWebView);
     } else {
       throw 'Could not launch Url';
     }
@@ -177,78 +179,71 @@ class ResumeApp extends State<MyApp> {
                     ),
                   ),
                   const SizedBox(height: 15.0),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      Link(
-                          uri: Uri.parse("https://twitter.com/po1nt_break"),
-                          builder: (context, follwLink) {
-                            return IconButton(
-                              onPressed: follwLink,
-                              //child: Text('Go to twitter.com'),
-                              splashColor: Colors.blueGrey,
-                              icon: const ImageIcon(
-                                AssetImage('images/twitter (2).png'),
-                              ),
-                              iconSize: 30.0,
-                            );
-                          }),
-                      const SizedBox(width: 5),
-                      Link(
-                          uri: Uri.parse("https://instagram.com/_polntbreak"),
-                          builder: (context, follwLink) {
-                            return IconButton(
-                              onPressed: follwLink,
-                              splashColor: Colors.blueGrey,
-                              icon: const ImageIcon(
-                                AssetImage('images/instagram.png'),
-                              ),
-                              iconSize: 30.0,
-                            );
-                          }),
-                      const SizedBox(width: 5),
-                      Link(
-                          uri: Uri.parse(
-                              "https://www.linkedin.com/in/olaoluwa-kamisi"),
-                          builder: (context, follwLink) {
-                            return IconButton(
-                              onPressed: follwLink,
-                              splashColor: Colors.blueGrey,
-                              icon: const ImageIcon(
-                                AssetImage('images/linkedin.png'),
-                              ),
-                              iconSize: 30.0,
-                            );
-                          }),
-                      const SizedBox(width: 5),
-                      Link(
-                          uri: Uri.parse(
-                              "https://discord.com/users/pointbreak#3316"),
-                          builder: (context, follwLink) {
-                            return IconButton(
-                              onPressed: follwLink,
-                              splashColor: Colors.blueGrey,
-                              icon: const ImageIcon(
-                                AssetImage('images/discord.png'),
-                              ),
-                              iconSize: 30.0,
-                            );
-                          }),
-                      const SizedBox(width: 5),
-                      Link(
-                          uri: Uri.parse("https://github.com/p0lntBreak"),
-                          builder: (context, follwLink) {
-                            return IconButton(
-                              onPressed: follwLink,
-                              splashColor: Colors.blueGrey,
-                              icon: const ImageIcon(
-                                AssetImage('images/github.png'),
-                              ),
-                              iconSize: 30.0,
-                            );
-                          })
-                    ],
-                  ),
+                  Row(mainAxisAlignment: MainAxisAlignment.center, children: [
+                    Link(
+                        uri: Uri.parse("https://twitter.com/po1nt_break"),
+                        builder: (context, follwLink) {
+                          return IconButton(
+                            onPressed: follwLink,
+                            //child: Text('Go to twitter.com'),
+                            splashColor: Colors.blueGrey,
+                            icon: const ImageIcon(
+                              AssetImage('images/twitter (2).png'),
+                            ),
+                            iconSize: 30.0,
+                          );
+                        }),
+                    const SizedBox(width: 5),
+                    Link(
+                        uri: Uri.parse("https://instagram.com/_polntbreak"),
+                        builder: (context, follwLink) {
+                          return IconButton(
+                            onPressed: follwLink,
+                            splashColor: Colors.blueGrey,
+                            icon: const ImageIcon(
+                              AssetImage('images/instagram.png'),
+                            ),
+                            iconSize: 30.0,
+                          );
+                        }),
+                    const SizedBox(width: 5),
+                    Link(
+                        uri: Uri.parse(
+                            "https://www.linkedin.com/in/olaoluwa-kamisi"),
+                        builder: (context, follwLink) {
+                          return IconButton(
+                            onPressed: follwLink,
+                            splashColor: Colors.blueGrey,
+                            icon: const ImageIcon(
+                              AssetImage('images/linkedin.png'),
+                            ),
+                            iconSize: 30.0,
+                          );
+                        }),
+                    const SizedBox(width: 5),
+                    Link(
+                        uri: Uri.parse(
+                            "https://discord.com/users/pointbreak#3316"),
+                        builder: (context, follwLink) {
+                          return IconButton(
+                            onPressed: follwLink,
+                            splashColor: Colors.blueGrey,
+                            icon: const ImageIcon(
+                              AssetImage('images/discord.png'),
+                            ),
+                            iconSize: 30.0,
+                          );
+                        }),
+                    const SizedBox(width: 5),
+                    IconButton(
+                      onPressed: openUrltwitter,
+                      splashColor: Colors.blueGrey,
+                      icon: const ImageIcon(
+                        AssetImage('images/github.png'),
+                      ),
+                      iconSize: 30.0,
+                    )
+                  ]),
                   const SizedBox(height: 30),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
